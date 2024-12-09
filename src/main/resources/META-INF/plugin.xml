@@ -14,8 +14,15 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Explore Keystore Files and view Certificates.
+    Easily manage and explore keystore files directly within your IntelliJ IDE.
+    This plugin allows you to open keystore files, browse their contents, and view detailed information about stored certificates, keys, and entries.
+    Whether you're working with JKS, PKCS12, or other supported formats, the plugin streamlines certificate analysis and keystore management, making it an essential tool for secure development workflows.
   ]]></description>
+    <change-notes>
+        - Support for x509-certificates
+        - A new icon
+        - Supporting dark and light mode
+    </change-notes>
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->

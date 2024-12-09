@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "de.timjungk"
-version = "1.0-SNAPSHOT"
+version = "0.1"
 
 repositories {
     mavenCentral()
@@ -36,8 +36,8 @@ tasks {
     }
 
     signPlugin {
-        certificateChain.set(System.getenv("CERTIFICATE_CHAIN"))
-        privateKey.set(System.getenv("PRIVATE_KEY"))
+        certificateChainFile.set(file("./chain.crt"))
+        privateKeyFile.set(file("./private.pem"))
         password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
     }
 

@@ -16,7 +16,8 @@ public class KSBrowser implements FileEditorProvider, DumbAware {
 
     @Override
     public boolean accept(@NotNull Project project, @NotNull VirtualFile file) {
-        return Objects.equals(file.getExtension(), "ks");
+        // True if is a java keystore
+        return Objects.equals(file.getFileType().getName(), "keystore");
     }
 
     @Override
